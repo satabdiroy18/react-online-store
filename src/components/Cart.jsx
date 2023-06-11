@@ -36,7 +36,7 @@ export default function Cart() {
                 </div>
             </header>
 
-            <div class="container">
+            <div class="container mt-5 mb-5">
                 {
                     cartItems.map((value, index) => {
 
@@ -54,7 +54,7 @@ export default function Cart() {
 
                                     <h1>{value.title}</h1>
 
-                                    {value.description}
+                                   <p>{value.description}</p> 
 
                                     <div title="You have selected this product to be shipped in the color yellow."></div>
 
@@ -63,7 +63,7 @@ export default function Cart() {
                                 <footer class="content">
 
                                     <h2 class="full-price">
-                                        {value.price}
+                                       Price:  {value.price}
                                     </h2>
 
 
